@@ -1,0 +1,1 @@
+export { onUserCreated } from './presentation/triggers/user-created.trigger';
