@@ -26,8 +26,8 @@
 
     "emulators": "firebase emulators:start",
 
-    "dev": "concurrently \"npm run emulators\" \"npm run start:dev\""
-  },
+    "dev": "concurrently \"npm --prefix functions run build\" \"npm run start:dev\" \"firebase emulators:start\""
+    },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",

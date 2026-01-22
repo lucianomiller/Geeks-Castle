@@ -54,9 +54,6 @@ npm install -g firebase-tools
 
 # Login to Firebase
 firebase login
-
-# Inicializar Firebase
-firebase init
 ```
 
 ## ⚙️ Configuration
@@ -85,10 +82,13 @@ npm run dev
 
 ### Option 2: Run separately
 ```bash
-# Terminal 1: Start Firebase emulators
+# Terminal 1: Build Functions
+npm run functions:build
+
+# Terminal 2: Start Firebase emulators
 npm run emulators
 
-# Terminal 2: Start NestJS API
+# Terminal 3: Start NestJS API
 npm run start:dev
 ```
 
