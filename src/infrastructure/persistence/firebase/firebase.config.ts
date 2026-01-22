@@ -17,7 +17,7 @@ export class FirebaseConfig {
         process.env.FIRESTORE_EMULATOR_HOST || 'localhost:8080';
 
       admin.initializeApp({
-        projectId: process.env.FIREBASE_PROJECT_ID || 'demo-project',
+        projectId: process.env.FIREBASE_PROJECT_ID || 'geeks-castle',
       });
     } else {
       admin.initializeApp({

@@ -6,7 +6,7 @@ export const initializeFirebaseAdmin = (): admin.firestore.Firestore => {
   if (!initialized) {
     admin.initializeApp();
     initialized = true;
-    console.log('✅ Firebase Admin initialized');
+    console.log('✅ Firebase initialized');
   }
 
   return admin.firestore();
