@@ -21,10 +21,10 @@ export class UserRepositoryImpl implements IUserRepository {
     const doc = snapshot.docs[0];
     const data = doc.data();
     return new User(
-      data.id,
       data.username,
       data.email,
       data.password,
+      data.id,
       data.createdAt,
       data.updatedAt,
     );
